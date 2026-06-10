@@ -1,33 +1,30 @@
-# CodeAlpha_Handwritten-Character-Recognition
-This project focuses on recognizing and classifying handwritten characters using Machine Learning and Deep Learning techniques. The system processes handwritten character images, extracts meaningful features, and predicts the corresponding character with high accuracy.
+# CodeAlpha ML Task 3: Handwritten Character Recognition
 
-## Features
-Image preprocessing and noise removal
-Character segmentation and normalization
-Handwritten character classification
-Deep Learning model implementation (CNN)
-Model training, testing, and evaluation
-Accurate character prediction from images
+## Objective
+CNN model to classify handwritten digits 0-9 using MNIST dataset for CodeAlpha ML Internship.
 
-## Technologies Used
-Python
-NumPy
-Pandas
-OpenCV
-TensorFlow / Keras
-Matplotlib
-Scikit-learn
+## Dataset
+**MNIST** - 70,000 grayscale images, 28x28 pixels
+- Training: 60,000 images
+- Testing: 10,000 images
 
-## Objectives
-Automate handwritten text recognition
-Improve document digitization processes
-Reduce manual data entry efforts
-Demonstrate the application of deep learning in image classification
-Applications
-Document digitization
-Postal address recognition
-Bank cheque processing
-Educational tools
-Historical document preservation
+## Model Architecture
+3-layer Convolutional Neural Network:
+1. Conv2D (32 filters) + MaxPooling
+2. Conv2D (64 filters) + MaxPooling  
+3. Conv2D (64 filters)
+4. Dense layers with Dropout
 
-This project demonstrates the complete workflow of handwritten character recognition, including image preprocessing, model development, training, evaluation, and real-time character prediction using deep learning techniques.
+## Results
+| Metric | Score |
+| --- | --- |
+| Test Accuracy | 99.1%+ |
+| Test Loss | <0.04 |
+
+## Tech Stack
+Python, TensorFlow, Keras, NumPy, Matplotlib
+
+## How to Run
+```bash
+pip install tensorflow matplotlib
+python Handwritten_recognition.py
